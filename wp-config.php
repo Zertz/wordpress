@@ -19,7 +19,7 @@ if (getenv('NOW_URL')) {
 }
 
 define('WP_SITEURL', $protocol . '://' . $_SERVER['HTTP_HOST']);
-define('WP_HOME', $protocol . $_SERVER['HTTP_HOST']);
+define('WP_HOME', $protocol . '://' . $_SERVER['HTTP_HOST']);
 
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
